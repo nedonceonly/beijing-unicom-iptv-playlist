@@ -153,7 +153,7 @@ http://iptv.local:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226210/406742223
 http://iptv.local:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226182/390398577.smil
 #EXTINF:-1 channel-number="85" tvg-id="85" tvg-name="CCTV4K超高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/CCTV/CCTV-4K.png" group-title="央视超高清" zz-definition="UHD",CCTV4K超高清
 http://iptv.local:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226170/10000100000000060000000001785131_0.smil
-#EXTINF:-1 channel-number="86" tvg-id="86" tvg-name="CCTV4K超高清HDR" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/CCTV/CCTV-4K.png" group-title="央视超高清" zz-definition="UHD",CCTV4K超高清HDR
+#EXTINF:-1 channel-number="86" tvg-id="86" tvg-name="CCTV4K超高清" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/CCTV/CCTV-4K.png" group-title="央视超高清" zz-definition="UHD" zz-raw-name="CCTV4K超高清HDR",CCTV4K超高清
 http://iptv.local:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221226172/10000100000000060000000001785134_0.smil
 #EXTINF:-1 channel-number="121" tvg-id="121" tvg-name="BRTV北京卫视" tvg-logo="https://raw.githubusercontent.com/zzzz0317/beijing-unicom-iptv-playlist/refs/heads/main/img/WeiShi/BeiJing.png" group-title="北京标清" zz-definition="SD",BRTV北京卫视
 http://iptv.local:8080/rtsp/61.135.88.136/PLTV/88888892/224/3221225814/10000100000000060000000000025042_0.smil
