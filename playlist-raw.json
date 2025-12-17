@@ -1316,29 +1316,16 @@
   },
   {
     "channelFECPort": 0,
-    "channelID": "00000001000000050000000000000626",
-    "channelLogoStruct": null,
-    "channelName": "CCTV4K超高清",
-    "channelPurchased": true,
-    "channelSDP": null,
-    "channelType": "1",
-    "channelURL": "igmp://239.3.1.244:2000",
-    "timeShift": false,
-    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226170/10000100000000060000000001785131_0.smil",
-    "userChannelID": 85
-  },
-  {
-    "channelFECPort": 0,
     "channelID": "00000001000000050000000000000606",
     "channelLogoStruct": null,
-    "channelName": "CCTV4K超高清HDR",
+    "channelName": "CCTV4K超高清",
     "channelPurchased": true,
     "channelSDP": null,
     "channelType": "1",
     "channelURL": "igmp://239.3.1.245:2000",
     "timeShift": false,
     "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226172/10000100000000060000000001785134_0.smil",
-    "userChannelID": 86
+    "userChannelID": 85
   },
   {
     "channelFECPort": 0,
@@ -1725,26 +1712,6 @@
     "timeShift": true,
     "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221225827/10000100000000060000000000025051_0.smil",
     "userChannelID": 164
-  },
-  {
-    "channelFECPort": 0,
-    "channelID": "00000001000000050000000000000183",
-    "channelLogoStruct": {
-      "beginTime": "null",
-      "channelLogURL": null,
-      "interval": 0,
-      "lasting": "null",
-      "positionX": 0,
-      "positionY": 0
-    },
-    "channelName": "财富天下",
-    "channelPurchased": true,
-    "channelSDP": "igmp://239.3.1.53:9136",
-    "channelType": "null",
-    "channelURL": "igmp://239.3.1.53:9136",
-    "timeShift": true,
-    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221225882/10000100000000060000000000025533_0.smil",
-    "userChannelID": 165
   },
   {
     "channelFECPort": 0,
@@ -2700,15 +2667,15 @@
   },
   {
     "channelFECPort": 0,
-    "channelID": "00000001000000050000000000000635",
+    "channelID": "00000001000000050000000000000636",
     "channelLogoStruct": null,
     "channelName": "广东卫视4K超高清",
     "channelPurchased": true,
     "channelSDP": null,
     "channelType": "1",
-    "channelURL": "igmp://239.3.1.203:2000",
-    "timeShift": true,
-    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226195/397709747.smil",
+    "channelURL": "igmp://239.3.1.27:2000",
+    "timeShift": false,
+    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226215/407059592.smil",
     "userChannelID": 406
   },
   {
@@ -2726,15 +2693,15 @@
   },
   {
     "channelFECPort": 0,
-    "channelID": "00000001000000050000000000000637",
+    "channelID": "00000001000000050000000000000638",
     "channelLogoStruct": null,
     "channelName": "深圳卫视4K超高清",
     "channelPurchased": true,
     "channelSDP": null,
     "channelType": "1",
-    "channelURL": "igmp://239.3.1.202:2000",
+    "channelURL": "igmp://239.3.1.28:2000",
     "timeShift": false,
-    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226188/397709741.smil",
+    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226212/407058192.smil",
     "userChannelID": 408
   },
   {
@@ -2861,32 +2828,6 @@
     "timeShift": false,
     "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221225966/10000100000000060000000000157829_0.smil",
     "userChannelID": 505
-  },
-  {
-    "channelFECPort": 0,
-    "channelID": "00000001000000050000000000000636",
-    "channelLogoStruct": null,
-    "channelName": "广东卫视4K超高清",
-    "channelPurchased": true,
-    "channelSDP": null,
-    "channelType": "1",
-    "channelURL": "igmp://239.3.1.27:2000",
-    "timeShift": false,
-    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226215/407059592.smil",
-    "userChannelID": 510
-  },
-  {
-    "channelFECPort": 0,
-    "channelID": "00000001000000050000000000000638",
-    "channelLogoStruct": null,
-    "channelName": "深圳卫视4K超高清",
-    "channelPurchased": true,
-    "channelSDP": null,
-    "channelType": "1",
-    "channelURL": "igmp://239.3.1.28:2000",
-    "timeShift": false,
-    "timeShiftURL": "rtsp://61.135.88.136/PLTV/88888892/224/3221226212/407058192.smil",
-    "userChannelID": 511
   },
   {
     "channelFECPort": 0,
