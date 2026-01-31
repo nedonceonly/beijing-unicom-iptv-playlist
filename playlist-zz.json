@@ -2263,10 +2263,13 @@
     "chno": 80,
     "tvg_id": 80,
     "tvg_name": "证券服务",
-    "logo": null,
-    "group_title": null,
-    "definition": null,
-    "flag": [],
+    "logo": "QiTa/GanSu_ZhengQuanFuWu.png",
+    "group_title": "体验",
+    "definition": "HD",
+    "flag": [
+      "hd",
+      "group-trial"
+    ],
     "live": {
       "bjunicom-multicast": {
         "addr": "rtp://239.3.1.24:8001",
@@ -3106,7 +3109,7 @@
     "chno": 201,
     "tvg_id": 201,
     "tvg_name": "收视指南",
-    "logo": null,
+    "logo": "QiTa/IPTV_ShouShiZhiNan.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3136,7 +3139,7 @@
     "chno": 202,
     "tvg_id": 202,
     "tvg_name": "热播剧场",
-    "logo": null,
+    "logo": "QiTa/IPTV_ReBoJuChang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3166,7 +3169,7 @@
     "chno": 203,
     "tvg_id": 203,
     "tvg_name": "经典电影",
-    "logo": null,
+    "logo": "QiTa/IPTV_JingDianDianYing.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3196,7 +3199,7 @@
     "chno": 204,
     "tvg_id": 204,
     "tvg_name": "魅力时尚",
-    "logo": null,
+    "logo": "QiTa/IPTV_MeiLiShiShang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3284,7 +3287,7 @@
     "chno": 207,
     "tvg_id": 207,
     "tvg_name": "少儿动画",
-    "logo": null,
+    "logo": "QiTa/IPTV_ShaoErDongHua.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3831,10 +3834,13 @@
     "chno": 349,
     "tvg_id": 349,
     "tvg_name": "重温经典",
-    "logo": null,
-    "group_title": null,
-    "definition": null,
-    "flag": [],
+    "logo": "QiTa/IPTV_ChongWenJingDian.png",
+    "group_title": "轮播",
+    "definition": "HD",
+    "flag": [
+      "hd",
+      "group-nvod"
+    ],
     "live": {
       "bjunicom-multicast": {
         "addr": "rtp://239.3.1.25:8001",
@@ -3853,7 +3859,7 @@
     "chno": 351,
     "tvg_id": 351,
     "tvg_name": "城市剧场",
-    "logo": null,
+    "logo": "QiTa/IPTV_ChengShiJuChang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3883,7 +3889,7 @@
     "chno": 352,
     "tvg_id": 352,
     "tvg_name": "军旅剧场",
-    "logo": null,
+    "logo": "QiTa/IPTV_JunLvJuChang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3913,7 +3919,7 @@
     "chno": 353,
     "tvg_id": 353,
     "tvg_name": "古装剧场",
-    "logo": null,
+    "logo": "QiTa/IPTV_GuZhuangJuChang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3943,7 +3949,7 @@
     "chno": 354,
     "tvg_id": 354,
     "tvg_name": "音乐现场",
-    "logo": null,
+    "logo": "QiTa/IPTV_YinYueXianChang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3973,7 +3979,7 @@
     "chno": 355,
     "tvg_id": 355,
     "tvg_name": "地理",
-    "logo": null,
+    "logo": "QiTa/IPTV_DiLi.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -3998,7 +4004,7 @@
     "chno": 356,
     "tvg_id": 356,
     "tvg_name": "美妆",
-    "logo": null,
+    "logo": "QiTa/IPTV_MeiZhuang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4028,7 +4034,7 @@
     "chno": 357,
     "tvg_id": 357,
     "tvg_name": "美人",
-    "logo": null,
+    "logo": "QiTa/IPTV_MeiRen.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4058,7 +4064,7 @@
     "chno": 358,
     "tvg_id": 358,
     "tvg_name": "精选",
-    "logo": null,
+    "logo": "QiTa/IPTV_JingXuan.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4088,7 +4094,7 @@
     "chno": 359,
     "tvg_id": 359,
     "tvg_name": "解密",
-    "logo": null,
+    "logo": "QiTa/IPTV_JieMi.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4118,7 +4124,7 @@
     "chno": 360,
     "tvg_id": 360,
     "tvg_name": "军事",
-    "logo": null,
+    "logo": "QiTa/IPTV_JunShi.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4148,7 +4154,7 @@
     "chno": 361,
     "tvg_id": 361,
     "tvg_name": "国学",
-    "logo": null,
+    "logo": "QiTa/IPTV_GuoXue.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4178,7 +4184,7 @@
     "chno": 362,
     "tvg_id": 362,
     "tvg_name": "戏曲",
-    "logo": null,
+    "logo": "QiTa/IPTV_XiQu.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4208,7 +4214,7 @@
     "chno": 363,
     "tvg_id": 363,
     "tvg_name": "早教",
-    "logo": null,
+    "logo": "QiTa/IPTV_ZaoJiao.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4238,7 +4244,7 @@
     "chno": 364,
     "tvg_id": 364,
     "tvg_name": "动画",
-    "logo": null,
+    "logo": "QiTa/IPTV_DongHua.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4268,7 +4274,7 @@
     "chno": 365,
     "tvg_id": 365,
     "tvg_name": "好学生",
-    "logo": null,
+    "logo": "QiTa/IPTV_HaoXueSheng.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4298,7 +4304,7 @@
     "chno": 366,
     "tvg_id": 366,
     "tvg_name": "鉴赏",
-    "logo": null,
+    "logo": "QiTa/IPTV_JianShang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4328,7 +4334,7 @@
     "chno": 367,
     "tvg_id": 367,
     "tvg_name": "墨宝",
-    "logo": null,
+    "logo": "QiTa/IPTV_MoBao.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4358,7 +4364,7 @@
     "chno": 368,
     "tvg_id": 368,
     "tvg_name": "光影",
-    "logo": null,
+    "logo": "QiTa/IPTV_GuangYing.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4388,7 +4394,7 @@
     "chno": 369,
     "tvg_id": 369,
     "tvg_name": "台球",
-    "logo": null,
+    "logo": "QiTa/IPTV_TaiQiu.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4418,7 +4424,7 @@
     "chno": 370,
     "tvg_id": 370,
     "tvg_name": "爱生活",
-    "logo": null,
+    "logo": "QiTa/IPTV_AiShengHuo.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4448,7 +4454,7 @@
     "chno": 371,
     "tvg_id": 371,
     "tvg_name": "武术",
-    "logo": null,
+    "logo": "QiTa/IPTV_WuShu.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4478,7 +4484,7 @@
     "chno": 372,
     "tvg_id": 372,
     "tvg_name": "高网",
-    "logo": null,
+    "logo": "QiTa/IPTV_GaoWang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4508,7 +4514,7 @@
     "chno": 373,
     "tvg_id": 373,
     "tvg_name": "足球",
-    "logo": null,
+    "logo": "QiTa/IPTV_ZuQiu.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4538,7 +4544,7 @@
     "chno": 374,
     "tvg_id": 374,
     "tvg_name": "武侠剧场",
-    "logo": null,
+    "logo": "QiTa/IPTV_WuXiaJuChang.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4568,7 +4574,7 @@
     "chno": 375,
     "tvg_id": 375,
     "tvg_name": "喜剧影院",
-    "logo": null,
+    "logo": "QiTa/IPTV_XiJuYingYuan.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4598,7 +4604,7 @@
     "chno": 376,
     "tvg_id": 376,
     "tvg_name": "动作影院",
-    "logo": null,
+    "logo": "QiTa/IPTV_DongZuoYingYuan.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4628,7 +4634,7 @@
     "chno": 377,
     "tvg_id": 377,
     "tvg_name": "家庭影院",
-    "logo": null,
+    "logo": "QiTa/IPTV_JiaTingYingYuan.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4658,7 +4664,7 @@
     "chno": 378,
     "tvg_id": 378,
     "tvg_name": "星影",
-    "logo": null,
+    "logo": "QiTa/IPTV_XingYing.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
@@ -4688,7 +4694,7 @@
     "chno": 379,
     "tvg_id": 379,
     "tvg_name": "IPTV5＋高清",
-    "logo": null,
+    "logo": "QiTa/IPTV5+.png",
     "group_title": "轮播",
     "definition": "HD",
     "flag": [
