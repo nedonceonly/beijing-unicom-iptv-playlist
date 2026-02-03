@@ -540,7 +540,7 @@
     "chno": 19,
     "tvg_id": 19,
     "tvg_name": "聚鲨环球精选",
-    "logo": null,
+    "logo": "QiTa/GouWu_JuShaHuanQiuJingXuan.png",
     "group_title": "购物",
     "definition": "HD",
     "flag": [
@@ -570,7 +570,7 @@
     "chno": 20,
     "tvg_id": 20,
     "tvg_name": "央广购物",
-    "logo": null,
+    "logo": "QiTa/GouWu_YangGuangGouWu.png",
     "group_title": "购物",
     "definition": "HD",
     "flag": [
@@ -865,7 +865,7 @@
     "chno": 30,
     "tvg_id": 30,
     "tvg_name": "家有购物精选",
-    "logo": null,
+    "logo": "QiTa/GouWu_JiaYouGouWu.png",
     "group_title": "购物",
     "definition": "HD",
     "flag": [
@@ -924,7 +924,7 @@
     "chno": 32,
     "tvg_id": 32,
     "tvg_name": "优购物",
-    "logo": null,
+    "logo": "QiTa/GouWu_YouGouWu.png",
     "group_title": "购物",
     "definition": "HD",
     "flag": [
@@ -958,6 +958,7 @@
     "group_title": "购物",
     "definition": "HD",
     "flag": [
+      "ignore",
       "hd",
       "group-shopping"
     ],
@@ -1189,7 +1190,7 @@
     "chno": 42,
     "tvg_id": 42,
     "tvg_name": "家有购物",
-    "logo": null,
+    "logo": "QiTa/GouWu_JiaYouGouWu.png",
     "group_title": "购物",
     "definition": "HD",
     "flag": [
@@ -1219,7 +1220,7 @@
     "chno": 43,
     "tvg_id": 43,
     "tvg_name": "央广购物精选",
-    "logo": null,
+    "logo": "QiTa/GouWu_YangGuangGouWu.png",
     "group_title": "购物",
     "definition": "HD",
     "flag": [
@@ -1399,7 +1400,7 @@
     "chno": 49,
     "tvg_id": 49,
     "tvg_name": "聚鲨环球",
-    "logo": null,
+    "logo": "QiTa/GouWu_JuShaHuanQiuJingXuan.png",
     "group_title": "购物",
     "definition": "HD",
     "flag": [
@@ -1703,6 +1704,7 @@
     "group_title": "购物",
     "definition": "HD",
     "flag": [
+      "ignore",
       "hd",
       "group-shopping"
     ],
@@ -1733,6 +1735,7 @@
     "group_title": "购物",
     "definition": "HD",
     "flag": [
+      "ignore",
       "hd",
       "group-shopping"
     ],
@@ -3375,7 +3378,7 @@
     "chno": 301,
     "tvg_id": 301,
     "tvg_name": "房山电视台",
-    "logo": null,
+    "logo": "QiTa/QuXian_FangShan.png",
     "group_title": "区县",
     "definition": "HD",
     "flag": [
@@ -3405,7 +3408,7 @@
     "chno": 302,
     "tvg_id": 302,
     "tvg_name": "北京朝阳",
-    "logo": null,
+    "logo": "QiTa/QuXian_ChaoYang.png",
     "group_title": "区县",
     "definition": "HD",
     "flag": [
@@ -3427,7 +3430,7 @@
     "chno": 303,
     "tvg_id": 303,
     "tvg_name": "密云电视台",
-    "logo": null,
+    "logo": "QiTa/QuXian_MiYun.png",
     "group_title": "区县",
     "definition": "HD",
     "flag": [
@@ -3449,7 +3452,7 @@
     "chno": 304,
     "tvg_id": 304,
     "tvg_name": "通州电视台",
-    "logo": null,
+    "logo": "QiTa/QuXian_TongZhou.png",
     "group_title": "区县",
     "definition": "HD",
     "flag": [
@@ -3471,7 +3474,7 @@
     "chno": 305,
     "tvg_id": 305,
     "tvg_name": "延庆电视台",
-    "logo": null,
+    "logo": "QiTa/QuXian_YanQing.png",
     "group_title": "区县",
     "definition": "SD",
     "flag": [
@@ -3493,7 +3496,7 @@
     "chno": 306,
     "tvg_id": 306,
     "tvg_name": "门头沟电视台",
-    "logo": null,
+    "logo": "QiTa/QuXian_MenTouGou.png",
     "group_title": "区县",
     "definition": "HD",
     "flag": [
@@ -3504,6 +3507,28 @@
     "live": {
       "bjunicom-multicast": {
         "addr": "rtp://239.3.1.59:8001",
+        "type": "rtp"
+      }
+    },
+    "timeshift": {}
+  },
+  "平谷电视台": {
+    "name": "平谷电视台",
+    "id_sys": null,
+    "chno": 307,
+    "tvg_id": 307,
+    "tvg_name": "平谷电视台",
+    "logo": "QiTa/QuXian_PingGu.png",
+    "group_title": "区县",
+    "definition": "HD",
+    "flag": [
+      "from_sniffer_config",
+      "hd",
+      "group-district"
+    ],
+    "live": {
+      "bjunicom-multicast": {
+        "addr": "rtp://239.3.1.23:8001",
         "type": "rtp"
       }
     },
