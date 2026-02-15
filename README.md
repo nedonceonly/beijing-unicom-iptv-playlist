@@ -44,7 +44,9 @@ $ git gc --aggressive --prune=now
 
 ## 时移
 
-本项目已实现时移功能！时移参数参考 [APTV Playseek](https://docs.aptvapp.com/play/playseek)、[rtp2httpd Issue#25](https://github.com/stackia/rtp2httpd/issues/25)
+本项目已实现时移功能！**需要注意的是时移服务器只有 IPTV 专网才可以访问，其他网络均无法访问到时移服务器。**
+
+时移参数参考 [APTV Playseek](https://docs.aptvapp.com/play/playseek)、[rtp2httpd Issue#25](https://github.com/stackia/rtp2httpd/issues/25) 。
 
 已验证的服务端：
 * [rtp2httpd](https://github.com/stackia/rtp2httpd/)(需要启用 `playseek-passthrough` [PR#23](https://github.com/stackia/rtp2httpd/issues/23))
