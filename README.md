@@ -58,7 +58,7 @@ $ git gc --aggressive --prune=now
 * [电视直播](https://github.com/mytv-android/mytv-android) 2.0.0.184测试版，ts2hls模式时移进度有Bug，EPG识别逻辑比较奇怪，[Issues#230](https://github.com/mytv-android/mytv-android/issues/230) 已修复对本项目EPG数据的兼容性
 * ~~[我的电视 2.2.7](https://github.com/yaoxieyoulei/mytv-android) 和 [天光云影 3.3.10](https://t.me/mytv_android_release) 不支持HTTP协议的时移，原生RTSP流待确认~~
 * [云影空蒙 3.6.5-1](https://t.me/YYKM_release/46) rtp2httpd代理的RTSP流调整时移进度有一些小Bug，ts2hls模式效果完美，本节目单项目提供的其余所有功能均完美支持
-* [rtp2httpd m3u播放列表集成](https://github.com/stackia/rtp2httpd/blob/main/docs/m3u-integration.md) 使用组播节目单 [iptv-multicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-multicast.m3u) 非常完美
+* [rtp2httpd m3u播放列表集成](https://github.com/stackia/rtp2httpd/blob/main/docs/m3u-integration.md) 使用组播节目单 [iptv-multicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-multicast.m3u) 非常完美。版本 >= v3.10.1 可以支持 HLS 流代理，但自带网页播放器播放 HLS 流时由于存在起播速度较慢、部分浏览器自身不支持、与部分流兼容性不佳等问题因此仍建议继续采用组播节目单
 
 欢迎网友测试并提供反馈。
 
@@ -66,7 +66,7 @@ $ git gc --aggressive --prune=now
 
 * [iptv-multicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-multicast.m3u): 带有组播地址的播放列表，通过 [zzzz0317/beijing-unicom-iptv-playlist-sniffer](https://github.com/zzzz0317/beijing-unicom-iptv-playlist-sniffer/) 抓取
 * [iptv-unicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-unicast.m3u): 转换为单播地址的播放列表，需要使本地网络能解析 `iptv.local` 域名到您可访问的 IPTV 代理程序实例（如 `udpxy`、`rtp2httpd`、`msd_lite` 等），您也可以将文件中的 `iptv.local` 替换为您可访问的 IPTV 代理程序实例地址
-* [iptv-unicast-timeshift-ts2hls.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-unicast-timeshift-ts2hls.m3u.m3u): 转换为单播地址的播放列表，同上，但时移源变成了ts2hls模式
+* [iptv-unicast-timeshift-ts2hls.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-unicast-timeshift-ts2hls.m3u): 转换为单播地址的播放列表，同上，但时移源变成了不经过 HTTP 代理的 `ts2hls` 模式
 * [epg.xml](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/epg.xml): 节目指南数据，通过 [zzzz0317/beijing-unicom-iptv-playlist-sniffer epg.py](https://github.com/zzzz0317/beijing-unicom-iptv-playlist-sniffer/blob/main/epg.py) 抓取
 * [epg.xml.gz](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/epg.xml.gz): 上面那个文件的压缩版，节目单中自动调用此文件
 * [playlist-raw.json](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/playlist-raw.json): 原始节目单，来自 channelAcquire 接口
@@ -80,13 +80,14 @@ $ git gc --aggressive --prune=now
 
 |文件名称|Sniffer配置对应|地址|时移|说明|
 |-----|-----|-----|-----|-----|
-|[iptv-unicast-timeshift-ts2hls.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-unicast-timeshift-ts2hls.m3u)|仅能通过 `generator.py` 生成|HTTP转组播|TS2HLS|**推荐**|
 |[iptv-unicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-unicast.m3u)|playlist_save_path|HTTP转组播|HTTP转RTSP|**推荐**|
 |[iptv-multicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-multicast.m3u)|playlist_mc_save_path|组播|RTSP|**推荐**，光猫路由模式、[rtp2httpd播放列表集成](https://github.com/stackia/rtp2httpd/blob/main/docs/m3u-integration.md) 可直接使用|
 |[iptv-ignored-unicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-ignored-unicast.m3u)|playlist_ignored_save_path|HTTP转组播|HTTP转RTSP|已忽略的频道列表，大概没用|
 |[iptv-ignored-multicast.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-ignored-multicast.m3u)|playlist_ignored_mc_save_path|组播|RTSP|已忽略的频道列表，大概没用|
 |[iptv-rtsp.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-rtsp.m3u)|playlist_rtsp_save_path|HTTP转RTSP|HTTP转RTSP|[我的电视](https://github.com/yaoxieyoulei/mytv-android)及其分支可使用时移|
 |[iptv-rtsp-raw.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-rtsp-raw.m3u)|playlist_rtsp_raw_save_path|RTSP|RTSP|光猫路由模式可直接使用，交换机组播不通时可尝试|
+|[iptv-unicast-timeshift-ts2hls.m3u](https://github.com/zzzz0317/beijing-unicom-iptv-playlist/raw/refs/heads/main/iptv-unicast-timeshift-ts2hls.m3u)|仅能通过 [在线生成器](https://butv.0w0.ltd/) 或 `generator.py` 生成|HTTP转组播|TS2HLS|代理程序不支持RTSP、HTTP代理时可尝试|
+|仅能通过 [在线生成器](https://butv.0w0.ltd/) 或 `generator.py` 生成|仅能通过 [在线生成器](https://butv.0w0.ltd/) 或 `generator.py` 生成|HTTP转组播|HTTP转TS2HLS|可搭配 `rtp2httpd` >= v3.10.1 以及不支持RTSP时移的第三方播放器使用|
 
 
 ## 播放列表转换工具 generator.py
@@ -101,17 +102,18 @@ $ git gc --aggressive --prune=now
 * HTTP `live` 参数: 同 `--key-live`，指定多个时请使用英文逗号隔开。
 * HTTP `timeshift` 参数: 同 `--key-timeshift`，指定多个时请使用英文逗号隔开。
 
-键名说明：当源的类型为 `rtp` 和 `rtsp` 时，可在原始键名后添加 `-httpproxy` 将播放地址转换为代理格式，当源的类型为 `rtsp` 时，可在原始键名后添加 `-ts2hls` 将播放地址转换为ts2hls格式。
+键名说明：当源的类型为 `rtp` 和 `rtsp` 时，可在原始键名后添加 `-httpproxy` 将播放地址转换为代理格式，当源的类型为 `rtsp` 时，可在原始键名后添加 `-ts2hls` 将播放地址转换为 `ts2hls` 格式，或在原始键名后添加 `-ts2hls-httpproxy` 将播放地址转换为代理 `ts2hls` 格式。
 
 所以本项目提供的数据中可用的 Key 值如下：
 
-| Key                            | 直播/时移 | 解释                                                     |
-|--------------------------------|-----------|----------------------------------------------------------|
-| `bjunicom-multicast`           | 仅直播    | 组播直播源                                               |
-| `bjunicom-multicast-httpproxy` | 仅直播    | 由 udpxy 或 rtp2httpd 代理的组播直播源                   |
-| `bjunicom-rtsp`                | 直播+时移 | RTSP 直播源，**不推荐用于直播**                          |
-| `bjunicom-rtsp-httpproxy`      | 直播+时移 | 由 rtp2httpd 代理的 RTSP 直播源，**不推荐用于直播**      |
-| `bjunicom-rtsp-ts2hls`         | 直播+时移 | 由 RTSP 地址转换成的 TS2HLS 地址，**非常不推荐用于直播** |
+| Key                              | 直播/时移 | 解释                                                     |
+|----------------------------------|-----------|----------------------------------------------------------|
+| `bjunicom-multicast`             | 仅直播    | 组播直播源                                               |
+| `bjunicom-multicast-httpproxy`   | 仅直播    | 由 udpxy 或 rtp2httpd 代理的组播直播源                   |
+| `bjunicom-rtsp`                  | 直播+时移 | RTSP 直播源，**不推荐用于直播**                          |
+| `bjunicom-rtsp-httpproxy`        | 直播+时移 | 由 rtp2httpd 代理的 RTSP 直播源，**不推荐用于直播**      |
+| `bjunicom-rtsp-ts2hls`           | 直播+时移 | 由 RTSP 地址转换成的 TS2HLS 地址，**非常不推荐用于直播** |
+| `bjunicom-rtsp-ts2hls-httpproxy` | 直播+时移 | 由 rtp2httpd 代理的 TS2HLS 地址，**非常不推荐用于直播** |
 
 命令帮助信息：
 
@@ -151,6 +153,7 @@ $ python generator.py convert playlist-zz.json \
   --key-timeshift bjunicom-rtsp-ts2hls bjunicom-rtsp \
   --rtp-proxy-url http://10.1.1.1:8081/rtp/ \
   --rtsp-proxy-url http://10.1.1.1:8081/rtsp/ \
+  --http-proxy-url http://10.1.1.1:8081/http/ \
   --epg-url http://10.1.1.1:8081/epg.xml.gz \
   --logo-url http://10.1.1.1:8081/img/ \
   --output iptv.m3u
@@ -161,6 +164,7 @@ $ python generator.py convert playlist-zz.json \
 * `--key-timeshift`: 指定时移源（默认：`bjunicom-rtsp`）
 * `--rtp-proxy-url`: RTP 代理地址（默认：`http://iptv.local:8080/rtp/`）
 * `--rtsp-proxy-url`: RTSP 代理地址（默认：`http://iptv.local:8080/rtsp/`）
+* `--http-proxy-url`: HTTP 代理地址（默认：`http://iptv.local:8080/http/`）
 * `--multi-source`: 启用多源模式
 * `--tag-include`: 仅包含特定标签的频道（默认：无）
 * `--tag-exclude`: 排除特定标签的频道（默认：`ignore`）
@@ -170,8 +174,16 @@ $ python generator.py convert playlist-zz.json \
 
 ```shell
 $ python3 generator.py convert --help
-usage: generator.py convert [-h] [--key-live KEY_LIVE [KEY_LIVE ...]] [--key-timeshift KEY_TIMESHIFT [KEY_TIMESHIFT ...]] [--rtp-proxy-url RTP_PROXY_URL] [--rtsp-proxy-url RTSP_PROXY_URL] [--multi-source] [--tag-include TAG_INCLUDE [TAG_INCLUDE ...]]
-                            [--tag-exclude TAG_EXCLUDE [TAG_EXCLUDE ...]] [--keep-channel-acquire-name] [--epg-url EPG_URL] [--logo-url LOGO_URL] [--catchup-param CATCHUP_PARAM] [--output OUTPUT]
+usage: generator.py convert [-h] [--key-live KEY_LIVE [KEY_LIVE ...]]
+                            [--key-timeshift KEY_TIMESHIFT [KEY_TIMESHIFT ...]]
+                            [--rtp-proxy-url RTP_PROXY_URL]
+                            [--rtsp-proxy-url RTSP_PROXY_URL]
+                            [--http-proxy-url HTTP_PROXY_URL] [--multi-source]
+                            [--tag-include TAG_INCLUDE [TAG_INCLUDE ...]]
+                            [--tag-exclude TAG_EXCLUDE [TAG_EXCLUDE ...]]
+                            [--keep-channel-acquire-name] [--epg-url EPG_URL]
+                            [--logo-url LOGO_URL]
+                            [--catchup-param CATCHUP_PARAM] [--output OUTPUT]
                             source [source ...]
 
 positional arguments:
@@ -187,6 +199,8 @@ options:
                         RTP proxy URL.
   --rtsp-proxy-url RTSP_PROXY_URL
                         RTSP proxy URL.
+  --http-proxy-url HTTP_PROXY_URL
+                        HTTP proxy URL, for ts2hls-httpproxy use.
   --multi-source        Enable multi source mode.
   --tag-include TAG_INCLUDE [TAG_INCLUDE ...]
                         Only include channels with these tags.
@@ -225,6 +239,7 @@ $ python generator.py serve playlist-zz.json --listen 127.0.0.1 --port 5000 --ba
 * `port`: 端口号
 * `rtp`: RTP 路径（默认 `rtp`）
 * `rtsp`: RTSP 路径（默认 `rtsp`）
+* `http`: HTTP 路径（默认 `http`）
 * `multisource`: 启用多源（`1`/`true`）
 * `include`: 包含标签，多个用逗号分隔
 * `exclude`: 排除标签，多个用逗号分隔
@@ -297,6 +312,14 @@ server {
     
     # 如果您使用了 rtp2httpd 或其他能代理 rtsp 协议的软件
     location /rtsp {
+        proxy_redirect off;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8080;
+    }
+
+    # 如果您使用了 rtp2httpd 或其他能代理 http 协议的软件
+    location /http {
         proxy_redirect off;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
